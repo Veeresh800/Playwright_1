@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dashboard - Playwright Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a1628;
+            color: #e0e0e0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .logo-header {
+            background: #0a1628;
+            border-bottom: 1px solid #1a2f4a;
+            padding: 16px 30px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .logo-subtitle {
+            font-size: 10px;
+            color: #64748b;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-left: auto;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            min-width: 70px;
+        }
+
+        .dropdown {
+            background: #1a2f4a;
+            border: 1px solid #2a3f5a;
+            border-radius: 5px;
+            padding: 6px 10px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 12px;
+            min-width: 90px;
+        }
+
+        .dropdown:hover {
+            border-color: #3a4f6a;
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 6px;
+        }
+
+        .tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #3b82f6;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .main-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .navigation-header {
+            background: #0a1628;
+            border-bottom: 1px solid #1a2f4a;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+            padding: 16px 0;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 30px;
+            margin-left: auto;
+        }
+
+        .nav-tab {
+            font-size: 12px;
+            color: #64748b;
+            cursor: pointer;
+            padding: 16px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .nav-tab.active {
+            color: #3b82f6;
+            border-bottom-color: #3b82f6;
+        }
+
+        .nav-tab:hover {
+            color: #e0e0e0;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .tab-content {
+            display: none;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .tab-content.active {
+            display: flex;
+        }
+
+        /* Dashboard Tab */
+        .dashboard-content {
+            flex: 1;
+        }
+
+        .dashboard-panel {
+            width: 300px;
+            background: #0f1f35;
+            border-right: 1px solid #1a2f4a;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .panel-section {
+            margin-bottom: 28px;
+        }
+
+        .panel-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .panel-heading {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 6px;
+        }
+
+        .panel-description {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .metric {
+            margin-bottom: 16px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .main-panel {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: #1a2f4a;
+            border: 1px solid #2a3f5a;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .metric-card-label {
+            font-size: 11px;
+            color: #64748b;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .metric-card-value {
+            font-size: 26px;
+            font-weight: 600;
+            color: white;
+        }
+
+        /* Test Explorer Tab */
+        .test-explorer-content {
+            flex-direction: column;
+        }
+
+        .explorer-toolbar {
+            background: #0f1f35;
+            border-bottom: 1px solid #1a2f4a;
+            padding: 16px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .run-all-btn {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .run-all-btn:hover {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .tests-list {
+            display: grid;
+            gap: 12px;
+            padding: 30px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .test-item {
+            background: #1a2f4a;
+            border: 1px solid #2a3f5a;
+            border-radius: 6px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .test-item:hover {
+            background: #1f3a50;
+            border-color: #3a5f7a;
+        }
+
+        .test-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: #3b82f6;
+            margin-bottom: 6px;
+        }
+
+        .test-description {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+
+        .test-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 10px;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo and Controls Header -->
+        <div class="logo-header">
+            <div class="logo">
+                <div class="logo-icon">H</div>
+                <div class="logo-text">
+                    <div class="logo-title">HEXAWARE</div>
+                    <div class="logo-subtitle">TEST DASHBOARD — FLIGHT FAMILY</div>
+                </div>
+            </div>
+
+            <div class="header-controls">
+                <div class="control-group">
+                    <label class="control-label">Browser</label>
+                    <select class="dropdown">
+                        <option>Chromium</option>
+                        <option>Firefox</option>
+                        <option>WebKit</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Environment</label>
+                    <select class="dropdown">
+                        <option>DEV</option>
+                        <option>STAGING</option>
+                        <option>PROD</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Tags</label>
+                    <div class="tags-container">
+                        <div class="tag">flight</div>
+                        <div class="tag">scrum-6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Section -->
+        <div class="main-section">
+            <!-- Navigation Header -->
+            <div class="navigation-header">
+                <div class="header-title">HEXAWARE TEST DASHBOARD — FLIGHT FAMILY</div>
+                <div class="nav-tabs">
+                    <div class="nav-tab active" data-tab="dashboard">Dashboard</div>
+                    <div class="nav-tab" data-tab="explorer">Test Explorer</div>
+                    <div class="nav-tab" data-tab="history">History & Trends</div>
+                    <div class="nav-tab" data-tab="timeline">Execution Timeline</div>
+                    <div class="nav-tab" data-tab="data">Test Data</div>
+                    <div class="nav-tab" data-tab="schedules">Schedules</div>
+                    <div class="nav-tab" data-tab="settings">Settings</div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content">
+                <!-- Dashboard Tab -->
+                <div class="tab-content active dashboard-content" id="dashboard">
+                    <!-- Left Panel -->
+                    <div class="dashboard-panel">
+                        <div class="panel-section">
+                            <div class="panel-title">Dashboard Overview</div>
+                            <div class="panel-heading">Workspace Summary</div>
+                            <div class="panel-description">Overview of current test execution and metrics</div>
+                        </div>
+
+                        <div class="panel-section">
+                            <div class="panel-title">Metrics</div>
+                            <div class="metric">
+                                <div class="metric-label">Total Tests</div>
+                                <div class="metric-value">2</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Test Suites</div>
+                                <div class="metric-value">1</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Status</div>
+                                <div class="metric-value" style="color: #10b981; font-size: 14px;">Ready</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Panel -->
+                    <div class="main-panel">
+                        <div class="content-section">
+                            <div class="section-title">Metrics Overview</div>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card-label">Test Files</div>
+                                    <div class="metric-card-value">2</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-label">Browser Support</div>
+                                    <div class="metric-card-value">3</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-label">Frameworks</div>
+                                    <div class="metric-card-value">Playwright</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Explorer Tab -->
+                <div class="tab-content test-explorer-content" id="explorer">
+                    <div class="explorer-toolbar">
+                        <div style="font-size: 14px; font-weight: 600; color: white;">Test Explorer</div>
+                        <button class="run-all-btn" onclick="runAllTests()">▶ Run All Tests</button>
+                    </div>
+                    <div class="tests-list">
+                        <div class="test-item">
+                            <div class="test-name">TC001 - One-Way Flight Search with Valid Inputs</div>
+                            <div class="test-description">User selects one-way trip and searches for flights</div>
+                            <div class="test-meta">
+                                <span>SCRUM-6</span>
+                                <span>Chromium</span>
+                                <span>DEV</span>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <div class="test-name">Flight Search - Air Canada</div>
+                            <div class="test-description">Complete test suite for flight search functionality</div>
+                            <div class="test-meta">
+                                <span>flight-search.spec.ts</span>
+                                <span>Chromium</span>
+                                <span>DEV</span>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <div class="test-name">Seed Test Suite</div>
+                            <div class="test-description">Database initialization and seed tests</div>
+                            <div class="test-meta">
+                                <span>seed.spec.ts</span>
+                                <span>Chromium</span>
+                                <span>DEV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Tabs (Placeholder) -->
+                <div class="tab-content" id="history">
+                    <div class="main-panel">
+                        <div class="section-title">History & Trends</div>
+                        <p style="color: #64748b;">Coming soon...</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="timeline">
+                    <div class="main-panel">
+                        <div class="section-title">Execution Timeline</div>
+                        <p style="color: #64748b;">Coming soon...</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="data">
+                    <div class="main-panel">
+                        <div class="section-title">Test Data</div>
+                        <p style="color: #64748b;">Coming soon...</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="schedules">
+                    <div class="main-panel">
+                        <div class="section-title">Schedules</div>
+                        <p style="color: #64748b;">Coming soon...</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="settings">
+                    <div class="main-panel">
+                        <div class="section-title">Settings</div>
+                        <p style="color: #64748b;">Coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.nav-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+
+        // Run All Tests function
+        function runAllTests() {
+            alert('Running all tests...\n\nCommand: npx playwright test\n\nTests will execute in Chromium on DEV environment.');
+            console.log('Running all tests...');
+        }
+
+        // Test item click handler
+        const testItems = document.querySelectorAll('.test-item');
+        testItems.forEach(item => {
+            item.addEventListener('click', function() {
+                console.log('Test clicked:', this.querySelector('.test-name').textContent);
+            });
+        });
+    </script>
+</body>
+</html>
