@@ -14,9 +14,9 @@ interface TestCase {
 }
 
 const JIRA_CONFIG = {
-  baseUrl: 'https://rajeshsavir02.atlassian.net',
-  email: 'rajeshsavir02@gmail.com',
-  apiToken: 'ATATT3xFfGF0Bam3oRXTmGAfOfhhYbKIS0Ok4gc6b1YPlToiCWr_ekE5ZKiEm4iFdKb2Fi7oQTHBdXjcLO-6kIa6LqYDP2bNfXHuo3KjZATiQmpk8TBk1dduqeo18FToF2gu_UriwiOFT8_1m9afbCQLyxbUA52eQjbIm1cPyuhf_52meDAw8bs=624B7750',
+  baseUrl: '',
+  email: '',
+  apiToken: '',
 };
 
 const testCases: TestCase[] = [
