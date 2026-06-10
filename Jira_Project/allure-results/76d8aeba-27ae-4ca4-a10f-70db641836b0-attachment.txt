@@ -1,0 +1,4 @@
+Could not select trip type using standard methods: Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('text=One-way').first()
+

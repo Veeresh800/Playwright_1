@@ -1,0 +1,529 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: SCRUM-6\flight-search.spec.ts >> SCRUM-6: Flight Search - Air Canada >> TC003 - Flight Search with Multiple Passengers
+- Location: tests\SCRUM-6\flight-search.spec.ts:110:7
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - generic:
+          - list:
+            - listitem:
+              - link "Skip to book a flight":
+                - /url: "javascript: void(0)"
+            - listitem:
+              - link "Skip to content":
+                - /url: "javascript: void(0)"
+            - listitem:
+              - link "Skip to main navigation":
+                - /url: "javascript: void(0)"
+            - listitem:
+              - link "Skip to footer links":
+                - /url: "javascript: void(0)"
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - generic [ref=e9]:
+          - link "Air Canada - Go to homepage" [ref=e11]:
+            - /url: /
+            - img [ref=e13]
+          - generic [ref=e27]:
+            - search [ref=e30]:
+              - generic [ref=e35] [cursor=pointer]:
+                - generic [ref=e36]:
+                  - generic:
+                    - generic:
+                      - generic: Search
+                  - searchbox "Search" [ref=e38]
+                - button "Search" [ref=e40]:
+                  - generic [ref=e41]: Search
+                  - img [ref=e43]
+            - complementary "Site edition, language and currency selector" [ref=e47]:
+              - button "Select your edition and language. You are currently on the Canada English edition. You will be billed in Canadian dollars" [ref=e49] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - text: Select your edition and language. You are currently on the Canada English edition.
+                      - generic: You will be billed in Canadian dollars - CA$
+                    - generic:
+                      - generic: English CA$
+                      - generic:
+                        - img
+            - generic [ref=e52]:
+              - link "Join Aeroplan" [ref=e54] [cursor=pointer]:
+                - generic:
+                  - generic: Join Aeroplan
+              - link "Sign in" [ref=e57] [cursor=pointer]:
+                - generic:
+                  - generic: Sign in
+      - navigation "Main navigation" [ref=e59]:
+        - button "View less navigation section details" [expanded] [ref=e61] [cursor=pointer]:
+          - img [ref=e63]
+        - generic [ref=e69]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - link "Flights" [ref=e81]:
+                - /url: /home/ca/en/aco/flights
+                - generic [ref=e82]:
+                  - img [ref=e85]
+                  - generic [ref=e87]: Flights
+              - link "Packages" [ref=e89]:
+                - /url: /home/ca/en/aco/packages
+                - generic [ref=e90]:
+                  - img [ref=e93]
+                  - generic [ref=e95]: Packages
+              - link "Deals" [ref=e97]:
+                - /url: https://www.aircanada.com/en-ca/?acid=INT:ACT:specialoffer:spOffer:::home_side_nav|caen
+                - generic [ref=e98]:
+                  - img [ref=e101]
+                  - generic [ref=e103]: Deals
+            - generic [ref=e104]:
+              - link "Trips" [ref=e108]:
+                - /url: /home/ca/en/aco/trips
+                - generic [ref=e109]:
+                  - img [ref=e112]
+                  - generic [ref=e114]: Trips
+              - link "Check-in" [ref=e116]:
+                - /url: /home/ca/en/aco/checkin
+                - generic [ref=e117]:
+                  - img [ref=e120]
+                  - generic [ref=e122]: Check-in
+              - link "Flight status" [ref=e124]:
+                - /url: /home/ca/en/aco/flight-status
+                - generic [ref=e125]:
+                  - img [ref=e128]
+                  - generic [ref=e130]: Flight status
+            - generic [ref=e131]:
+              - link "Aeroplan" [ref=e135]:
+                - /url: /aeroplan/member/dashboard?lang=en-CA
+                - generic [ref=e136]:
+                  - img [ref=e139]
+                  - generic [ref=e141]: Aeroplan
+              - link "Aeroplan offers" [ref=e143]:
+                - /url: /aeroplan/member/dashboard/myoffers?lang=en-CA
+                - generic [ref=e144]:
+                  - img [ref=e147]
+                  - generic [ref=e149]: Aeroplan offers
+              - link "eStore. This link opens in a new tab." [ref=e151]:
+                - /url: https://aeroplan.rewardops.com/en-CA/home/for-you
+                - generic [ref=e156]: eStore
+            - generic [ref=e159]:
+              - link "Hotels" [ref=e163]:
+                - /url: /home/ca/en/aco/hotels
+                - generic [ref=e164]:
+                  - img [ref=e167]
+                  - generic [ref=e169]: Hotels
+              - link "Cars" [ref=e171]:
+                - /url: /home/ca/en/aco/cars
+                - generic [ref=e172]:
+                  - img [ref=e175]
+                  - generic [ref=e177]: Cars
+              - link "Flight Passes" [ref=e179]:
+                - /url: /home/ca/en/aco/flight-pass
+                - generic [ref=e180]:
+                  - img [ref=e183]
+                  - generic [ref=e185]: Flight Passes
+            - link "More" [ref=e190]:
+              - generic [ref=e191]:
+                - img [ref=e194]
+                - generic [ref=e196]: More
+          - link "Accessibility services" [ref=e203]:
+            - /url: https://www.aircanada.com/ca/en/aco/home/plan/accessibility.html
+            - img [ref=e205]
+            - strong [ref=e207]: Accessibility services
+    - generic [ref=e210]:
+      - main [ref=e211]:
+        - generic [ref=e218]:
+          - generic [ref=e221] [cursor=pointer]:
+            - generic [ref=e225]: WELCOME OFFER
+            - generic [ref=e226]:
+              - generic:
+                - img
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - img "TD Aeroplan Visa Infinite Card" [ref=e230]
+                - generic [ref=e231]:
+                  - text: You could earn up to 40,000 points
+                  - superscript [ref=e232]: ±
+                  - text: towards a trip!
+                - img [ref=e233]
+              - heading "Up to 40,000 points± could be yours" [level=4] [ref=e235]:
+                - text: Up to 40,000 points
+                - superscript [ref=e236]: ±
+                - text: could be yours
+              - paragraph [ref=e237]:
+                - text: Plus get a
+                - strong [ref=e238]: First Year Annual Fee Rebate
+                - superscript [ref=e239]: "1"
+                - text: with the
+                - strong [ref=e240]:
+                  - text: TD
+                  - superscript [ref=e241]: ®
+                  - text: Aeroplan
+                  - superscript [ref=e242]: ®
+                  - text: Visa Infinite* Card
+              - generic [ref=e243]:
+                - link "Apply now" [ref=e244]:
+                  - /url: https://www.aircanada.com/ca/en/aco/home/aeroplan/credit-cards/td/personal.html?acid=INT:ACO::PRJNE4122:URL4586::&ccSource=infinite-homepage-mass
+                  - generic [ref=e245]: Apply now
+                - paragraph [ref=e246]:
+                  - superscript [ref=e247]: ±
+                  - text: Subject to TD offer terms and Aeroplan program terms.
+                  - superscript [ref=e248]: "1"
+                  - text: Conditions apply.
+          - generic [ref=e253]:
+            - heading "Where can we take you?" [level=1] [ref=e255]
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - generic [ref=e260]:
+                  - button "Choose trip type - currently selected - Round-trip" [ref=e262] [cursor=pointer]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - strong: Round-trip
+                          - generic:
+                            - img
+                  - dialog "Calendar modal open with today's date selected." [ref=e267]:
+                    - generic [ref=e269]:
+                      - generic [ref=e270]:
+                        - heading "Trip type" [level=1]:
+                          - generic [ref=e271]: Trip type
+                      - generic [ref=e273]:
+                        - group [ref=e274]:
+                          - radiogroup [ref=e277]:
+                            - generic [ref=e280]:
+                              - radio "Round-trip" [checked] [ref=e281] [cursor=pointer]
+                              - generic: Round-trip
+                            - generic [ref=e284]:
+                              - radio "One-way" [ref=e285] [cursor=pointer]
+                              - generic: One-way
+                            - generic [ref=e288]:
+                              - radio "Multi-city" [ref=e289] [cursor=pointer]
+                              - generic: Multi-city
+                        - button "Close" [ref=e292] [cursor=pointer]:
+                          - generic [ref=e293]: Close
+                - generic [ref=e294]:
+                  - button "Passengers - currently selected - 1 Adult" [ref=e297] [cursor=pointer]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - strong: 1 Adult
+                          - generic:
+                            - img
+                  - paragraph [ref=e299]
+                - generic [ref=e305]:
+                  - checkbox "Book with Aeroplan points" [ref=e306] [cursor=pointer]
+                  - generic [ref=e308] [cursor=pointer]:
+                    - img [ref=e310]
+                    - strong [ref=e311]: Book with Aeroplan points
+              - generic [ref=e314]:
+                - generic [ref=e317]:
+                  - button "Departing from - MAA - Chennai (Madras)" [ref=e320] [cursor=pointer]:
+                    - generic [ref=e321]:
+                      - paragraph [ref=e322]: MAA
+                      - paragraph [ref=e323]: Chennai (Madras)
+                  - button "Swap origin and destination" [ref=e325] [cursor=pointer]:
+                    - img [ref=e327]: s
+                  - button "Arriving in" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e335]:
+                      - img [ref=e337]
+                      - paragraph [ref=e339]: Arriving in
+                - generic [ref=e340]:
+                  - generic [ref=e342]:
+                    - button "Show calendar" [ref=e343] [cursor=pointer]:
+                      - img [ref=e345]
+                    - generic [ref=e352]:
+                      - generic:
+                        - generic:
+                          - generic: Departure date
+                      - combobox "Departure date" [ref=e354]
+                    - generic [ref=e360]:
+                      - generic:
+                        - generic:
+                          - generic: Return date
+                      - combobox "Return date" [ref=e362]
+                  - generic:
+                    - generic:
+                      - definition
+                  - generic [ref=e363]: "Enter the date, day and month in this format: DD/MM, or press the down arrow key button to open the calendar and select your date from there."
+                - generic [ref=e367]:
+                  - generic [ref=e369]:
+                    - generic [ref=e370]:
+                      - generic:
+                        - generic:
+                          - img
+                    - generic [ref=e371]:
+                      - generic:
+                        - generic:
+                          - generic: Promotion code
+                      - textbox "Promotion code" [ref=e373]:
+                        - /placeholder: ""
+                  - generic:
+                    - definition
+                - button "Search" [ref=e377] [cursor=pointer]:
+                  - generic [ref=e378]: Search
+              - banner "You're visiting the Canada edition of our website. Based on your location, we recommend using our India edition" [ref=e385]:
+                - paragraph [ref=e386]:
+                  - text: You're visiting the
+                  - strong [ref=e387]: Canada
+                  - text: edition of our website. Based on your location, we recommend using our
+                  - link "India edition" [ref=e388]:
+                    - /url: /home/in/en/aco/flights
+                - img [ref=e390]
+              - region
+          - generic [ref=e393]:
+            - generic [ref=e396]:
+              - heading "Featured flight offers" [level=2] [ref=e397]
+              - generic [ref=e401]:
+                - heading "Your out-of-office starts here" [level=2] [ref=e402]
+                - paragraph [ref=e404]: Save 25% on select base fares worldwide for travel by February 28, 2027. Book by June 8.
+                - link "Book now" [ref=e406] [cursor=pointer]:
+                  - /url: https://www.aircanada.com/en-ca/?acid=INT:ACO:25NtpJune2-8:PRJAC40000146:URL4720:salesbanner#worldwide-CVJU4VK1-modal
+                  - generic [ref=e407]: Book now
+            - generic [ref=e411]:
+              - img "3d globe image" [ref=e413]
+              - generic [ref=e414]:
+                - paragraph [ref=e415]: A WORLD OF DEALS
+                - heading "Still searching for that special somewhere? We’ll get you there." [level=2] [ref=e416]
+                - link "See offers" [ref=e418] [cursor=pointer]:
+                  - /url: https://www.aircanada.com/en-ca/?acid=INT:ACO:AEJanFlame2026:PRJNE4077:URL4129:homepageaebanner#aeoffer-modal
+                  - generic [ref=e419]: See offers
+                - generic [ref=e423]:
+                  - figure "destinations" [ref=e425]:
+                    - paragraph [ref=e426]: 180+
+                    - generic [ref=e427]: destinations
+                  - figure "daily flights" [ref=e429]:
+                    - paragraph [ref=e430]: 1,000+
+                    - generic [ref=e431]: daily flights
+                  - figure "continents" [ref=e433]:
+                    - paragraph [ref=e434]: "6"
+                    - generic [ref=e435]: continents
+            - generic [ref=e439]:
+              - heading "New to Air Canada" [level=2] [ref=e440]
+              - list [ref=e444]:
+                - listitem [ref=e445]:
+                  - generic [ref=e448]:
+                    - heading "Welcome back to our Montréal Maple Leaf Lounge" [level=3] [ref=e449]
+                    - paragraph [ref=e450]: Refreshed, reopened and ready to welcome you in the domestic terminal.
+                    - link "Learn more. This link opens in a new tab." [ref=e452] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/fly/premium-services/maple-leaf-lounges/maple-leaf-lounge-details.html?acid=INT:EVE:POSCAYULDOMMLL:PRJAER40000208:URL4513::ACapp#/!lounge@montreal
+                      - generic [ref=e453]: Learn more
+                      - img [ref=e456]
+                - listitem [ref=e458]:
+                  - generic [ref=e461]:
+                    - heading "More choice and support for mobility needs" [level=3] [ref=e462]
+                    - paragraph [ref=e463]: New equipment options for a smoother, more comfortable journey.
+                    - link "Learn more. This link opens in a new tab." [ref=e465] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/plan/accessibility/mobility-aids-and-assistance.html?acid=INT:ACO:accessibilitycampaign2026:prjac40000141:url4699:newacomobilityen
+                      - generic [ref=e466]: Learn more
+                      - img [ref=e469]
+                - listitem [ref=e471]:
+                  - generic [ref=e474]:
+                    - heading "Supporting your journey with a service dog" [level=3] [ref=e475]
+                    - paragraph [ref=e476]: A new program offering a certification option for owner-trained service dogs.
+                    - link "Learn more. This link opens in a new tab." [ref=e478] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/plan/accessibility/service-emotional-support-dogs.html.html?acid=INT:ACO:accessibilitycampaign2026:prjac40000141:url4699:newacoservicedogen#cabin-ready
+                      - generic [ref=e479]: Learn more
+                      - img [ref=e482]
+            - generic [ref=e485]:
+              - heading "Travel news and updates" [level=2] [ref=e486]
+              - generic [ref=e487]:
+                - generic [ref=e488]:
+                  - img "Travel news and updates" [ref=e490]
+                  - generic [ref=e491]:
+                    - heading "Review travel requirements for your trip" [level=3] [ref=e492]
+                    - paragraph [ref=e493]: Review the latest travel requirements and find answers to your frequently asked questions.
+                    - separator [ref=e494]
+                    - link "Visit Travel Ready hub. Opens in a new tab" [ref=e496] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/plan/travel-requirements/travel-ready-hub.html
+                      - generic:
+                        - generic:
+                          - text: Visit Travel Ready hub
+                          - generic:
+                            - generic:
+                              - img
+                - list [ref=e498]:
+                  - listitem [ref=e499]:
+                    - link "Military situation in the Middle East. Opens in a new tab" [ref=e501] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates/2026/middle-east-travel.html
+                      - generic:
+                        - generic:
+                          - text: Military situation in the Middle East
+                          - generic:
+                            - generic:
+                              - img
+                  - listitem [ref=e502]:
+                    - link "Baggage fee changes. Opens in a new tab" [ref=e504] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates/baggage-fee-changes.html
+                      - generic:
+                        - generic:
+                          - text: Baggage fee changes
+                          - generic:
+                            - generic:
+                              - img
+                  - listitem [ref=e505]:
+                    - link "EU Entry/Exit System – expect delays at European airports. Opens in a new tab" [ref=e507] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates/2025/eu-introduces-entry-exit-system.html
+                      - generic:
+                        - generic:
+                          - text: EU Entry/Exit System – expect delays at European airports
+                          - generic:
+                            - generic:
+                              - img
+                  - listitem [ref=e508]:
+                    - link "Travelling through Montréal?. Opens in a new tab" [ref=e510] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates/2026/travelling-through-montreal.html
+                      - generic:
+                        - generic:
+                          - text: Travelling through Montréal?
+                          - generic:
+                            - generic:
+                              - img
+                  - listitem [ref=e511]:
+                    - link "Travel to or from Cuba. Opens in a new tab" [ref=e513] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco//home/book/travel-news-and-updates/2026/travel-to-from-cuba.html
+                      - generic:
+                        - generic:
+                          - text: Travel to or from Cuba
+                          - generic:
+                            - generic:
+                              - img
+                  - listitem [ref=e514]:
+                    - link "More news. Opens in a new tab" [ref=e516] [cursor=pointer]:
+                      - /url: https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates.html
+                      - generic:
+                        - generic:
+                          - text: More news
+                          - generic:
+                            - generic:
+                              - img
+      - contentinfo [ref=e518]:
+        - generic [ref=e520]:
+          - link "Air Canada - Go to homepage" [ref=e522]:
+            - /url: /home/ca/en/aco/flights
+            - img "Air Canada" [ref=e524]
+          - generic:
+            - link "A Star Alliance member Opens in a new tab":
+              - /url: https://www.staralliance.com/en/home
+              - img "A Star Alliance member Opens in a new tab"
+        - generic [ref=e539]:
+          - generic [ref=e540]:
+            - heading "Support" [level=3] [ref=e542]
+            - link "Help and contact. This link opens in a new tab." [ref=e544]:
+              - /url: /ca/en/aco/home/fly/customer-support/contact-us.html
+              - text: Help And Contact
+            - link "Baggage & optional service fees. This link opens in a new tab." [ref=e546]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/legal/products-and-services.html
+              - text: Baggage & Optional Service Fees
+            - link "Customer service plan. This link opens in a new tab." [ref=e548]:
+              - /url: /ca/en/aco/home/legal/air-canada-customer-service-plan.html
+              - text: Customer Service Plan
+            - link "The Air Canada Cybersecurity Centre. This link opens in a new tab." [ref=e550]:
+              - /url: /ca/en/aco/home/book/travel-news-and-updates/telephone-and-email-scams.html
+              - text: The Air Canada Cybersecurity Centre
+            - link "Manage Cookies" [ref=e552]:
+              - /url: javascript:void(0)
+          - generic [ref=e553]:
+            - heading "Air Canada" [level=3] [ref=e555]
+            - link "Media centre. This link opens in a new tab." [ref=e557]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/about/media.html
+              - text: Media Centre
+            - link "Official languages. This link opens in a new tab." [ref=e559]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/about/official-languages.html#/
+              - text: Official Languages
+            - link "Leave Less. This link opens in a new tab." [ref=e561]:
+              - /url: https://leaveless.aircanada.com/ca/en/index.html
+              - text: Leave Less
+            - link "Our stories. This link opens in a new tab." [ref=e563]:
+              - /url: /ca/en/aco/home/video-hub.html
+              - text: Our Stories
+            - link "Investor relations. This link opens in a new tab." [ref=e565]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/about/investor-relations.html
+              - text: Investor Relations
+            - link "Careers. This link opens in a new tab." [ref=e567]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/about/careers.html
+              - text: Careers
+            - link "Modern slavery report. This link opens in a new tab." [ref=e569]:
+              - /url: https://content.presspage.com/uploads/3174/2b516d6a-25c7-40c1-a648-cc3c84a7712c/2025-modernslavery-report-en-final.pdf?10000
+              - text: Modern Slavery Report
+            - link "Diversity, Equity and Inclusion. This link opens in a new tab." [ref=e571]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/about/diversity-equity-inclusion.html
+              - text: Diversity, Equity And Inclusion
+          - generic [ref=e572]:
+            - heading "Other services" [level=3] [ref=e574]
+            - link "Air Canada for Business. This link opens in a new tab." [ref=e576]:
+              - /url: /ca/en/aco/home/book/business-travel.html
+              - text: Air Canada For Business
+            - link "Air Canada for travel agents. This link opens in a new tab." [ref=e578]:
+              - /url: https://acconnex.aircanada.com/home/login
+              - text: Air Canada For Travel Agents
+            - link "Air Canada Cargo. This link opens in a new tab." [ref=e580]:
+              - /url: http://www.aircanada.com/cargo/en/
+              - text: Air Canada Cargo
+            - link "Air Canada Foundation. This link opens in a new tab." [ref=e582]:
+              - /url: https://www.aircanada.com/en/about/community/foundation/index.html
+              - text: Air Canada Foundation
+          - generic [ref=e583]:
+            - heading "Our awards" [level=3] [ref=e585]
+            - generic [ref=e589]:
+              - img "Skytrax" [ref=e590]
+              - generic [ref=e591]: Best Airline in North America
+        - generic [ref=e593]:
+          - generic [ref=e595]: © 2026 Air Canada
+          - generic [ref=e597]:
+            - link "Terms of use. This link opens in a new tab." [ref=e599]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/legal/terms-of-use.html
+              - text: "| Terms of use"
+            - link "Privacy policy. This link opens in a new tab." [ref=e601]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/legal/privacy-policy.html
+              - text: "| Privacy policy"
+            - link "General Conditions of Carriage & Tariffs. This link opens in a new tab." [ref=e603]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/legal/conditions-carriage-tariffs.html
+              - text: "| General Conditions of Carriage & Tariffs"
+            - link "Cookie and tracking technologies policy. This link opens in a new tab." [ref=e605]:
+              - /url: https://www.aircanada.com/ca/en/aco/home/legal/cookie-policy.html
+              - text: Cookie and tracking technologies policy
+          - generic [ref=e608]:
+            - link "Facebook. This link opens in a new tab." [ref=e609]:
+              - /url: https://www.facebook.com/aircanada?src=footer
+              - img [ref=e611]
+            - link "Visit our X page. This link opens in a new tab." [ref=e613]:
+              - /url: https://twitter.com/aircanada?src=footer
+              - img [ref=e615]
+            - link "Subscribe to our YouTube channel. This link opens in a new tab." [ref=e617]:
+              - /url: https://www.youtube.com/user/aircanada?src=footer
+              - img [ref=e619]
+  - generic "site feedback" [ref=e621]:
+    - iframe [ref=e622]:
+      - img [ref=f8e2] [cursor=pointer]
+  - region "Cookie banner" [active] [ref=e623]:
+    - dialog "Privacy" [ref=e624]:
+      - generic [ref=e626]:
+        - generic [ref=e629]:
+          - text: Air Canada uses cookies to make its website work, to personalize it, to analyze visitor data and to present you with more relevant ads. You can manage cookies on the Air Canada pages of this website through your browser. You may accept or reject optional cookies on the
+          - strong [ref=e630]: Aeroplan
+          - text: and
+          - strong [ref=e631]: Air Canada Vacations
+          - text: pages of this website. More about
+          - link "More information about your privacy, opens in a new tab" [ref=e632]:
+            - /url: https://www.aircanada.com/ca/en/aco/home/legal/cookie-policy.html
+            - text: our cookies and tracking technologies policy.
+        - generic [ref=e634]:
+          - button "Manage preferences" [ref=e635] [cursor=pointer]
+          - button "Accept all" [ref=e636] [cursor=pointer]
+```
