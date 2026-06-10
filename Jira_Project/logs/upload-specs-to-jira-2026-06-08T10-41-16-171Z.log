@@ -1,0 +1,26 @@
+[2026-06-08 16:11:16] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 16:11:16] [INFO] 📚 JIRA SPECS UPLOAD - FEATURE FILES & TEST DOCUMENTATION
+[2026-06-08 16:11:16] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 16:11:16] [INFO] 📋 Story Information:
+[2026-06-08 16:11:16] [INFO]    Story Name: JiraStory1
+[2026-06-08 16:11:16] [INFO]    Story Key: SCRUM-6
+[2026-06-08 16:11:16] [INFO]    Epic: SCRUM-7
+[2026-06-08 16:11:16] [INFO]    Scrum: Sprint 1
+[2026-06-08 16:11:16] [INFO]    Jira URL: https://hexaware-team-fshzf12b.atlassian.net//browse/SCRUM-6
+[2026-06-08 16:11:16] [INFO] 🔍 Files to upload:
+[2026-06-08 16:11:16] [INFO]    1. AIR-6.feature (Feature File) from features/ - ✓
+[2026-06-08 16:11:16] [INFO]    2. AIR-6-TEST-PLAN.md (Test Plan) from specs/ - ✓
+[2026-06-08 16:11:16] [INFO]    3. AIR-6-TEST-CASES.md (Test Cases) from specs/ - ✓
+[2026-06-08 16:11:16] [INFO] 📥 Fetching existing attachments from Jira...
+[2026-06-08 16:11:16] [INFO] 📋 Found 0 existing attachment(s)
+[2026-06-08 16:11:16] [INFO] 🗑️  Checking for existing files to replace...
+[2026-06-08 16:11:16] [INFO] 📤 Uploading files to Jira...
+[2026-06-08 16:11:16] [INFO] 📤 Uploading: AIR-6.feature
+[2026-06-08 16:11:16] [INFO]    to Story: SCRUM-6
+[2026-06-08 16:11:17] [INFO] ✅ Successfully uploaded: AIR-6.feature
+[2026-06-08 16:11:17] [INFO] 📤 Uploading: AIR-6-TEST-PLAN.md
+[2026-06-08 16:11:17] [INFO]    to Story: SCRUM-6
+[2026-06-08 16:11:18] [INFO] ✅ Successfully uploaded: AIR-6-TEST-PLAN.md
+[2026-06-08 16:11:18] [INFO] 📤 Uploading: AIR-6-TEST-CASES.md
+[2026-06-08 16:11:18] [INFO]    to Story: SCRUM-6
+[2026-06-08 16:11:19] [INFO] ✅ Successfully uploaded: AIR-6-TEST-CASES.md

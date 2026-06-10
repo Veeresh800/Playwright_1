@@ -1,0 +1,49 @@
+================================================================================
+STORY EXECUTION REPORT
+================================================================================
+
+Execution ID:     exec-1780913213986
+Timestamp:        2026-06-08T10:06:53.986Z
+Status:           SUCCESS
+Duration:         1128ms
+
+ENVIRONMENT
+================================================================================
+Platform:         win32
+Node Version:     v24.15.0
+Environment:      development
+
+STORY DETAILS
+================================================================================
+Story Name:       JiraStory1
+Story Number:     SCRUM-6
+Epic:             SCRUM-7
+Scrum:            Sprint 1
+JIRA URL:         https://hexaware-team-fshzf12b.atlassian.net//browse/SCRUM-6
+
+Description:
+--------------------------------------------------------------------------------
+  h3. Acceptance Criteria:
+
+* User can enter:
+** Departure city
+** Destination city
+** Departure & return dates
+** Number of passengers
+* System displays available flights with:
+** Price
+** Duration
+** Stops
+** Airline details
+* User can filter results by:
+** Price range
+** Duration
+** Non-stop flights
+* User can sort results (price, time, duration)
+* Validation:
+** Error shown if fields are empty or invalid dates
+--------------------------------------------------------------------------------
+
+================================================================================
+Generated at: 8/6/2026, 3:36:53 pm
+================================================================================

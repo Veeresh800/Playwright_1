@@ -1,0 +1,371 @@
+<testsuites id="" name="" tests="11" failures="1" skipped="0" errors="8" time="123.16646399999999">
+<testsuite name="SCRUM-6\flight-search.spec.ts" timestamp="2026-06-09T08:37:53.470Z" hostname="chromium" tests="10" failures="1" skipped="0" time="499.951" errors="8">
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC001 - One-Way Flight Search with Valid Inputs" classname="SCRUM-6\flight-search.spec.ts" time="60.359">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-001: User selects one-way trip and searches for flights">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-7044d-ht-Search-with-Valid-Inputs-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-7044d-ht-Search-with-Valid-Inputs-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:16:7 › SCRUM-6: Flight Search - Air Canada › TC001 - One-Way Flight Search with Valid Inputs 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:27:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-7044d-ht-Search-with-Valid-Inputs-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-7044d-ht-Search-with-Valid-Inputs-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC002 - Round-Trip Flight Search with Multiple Segments" classname="SCRUM-6\flight-search.spec.ts" time="60.344">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-002: User searches for round-trip flights">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-0d354-arch-with-Multiple-Segments-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-0d354-arch-with-Multiple-Segments-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:67:7 › SCRUM-6: Flight Search - Air Canada › TC002 - Round-Trip Flight Search with Multiple Segments 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: Round-trip
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:74:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-0d354-arch-with-Multiple-Segments-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-0d354-arch-with-Multiple-Segments-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC003 - Flight Search with Multiple Passengers" classname="SCRUM-6\flight-search.spec.ts" time="60.363">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-003: User searches for flights with multiple passengers">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-41c82-ch-with-Multiple-Passengers-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-41c82-ch-with-Multiple-Passengers-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:110:7 › SCRUM-6: Flight Search - Air Canada › TC003 - Flight Search with Multiple Passengers 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:117:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-41c82-ch-with-Multiple-Passengers-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-41c82-ch-with-Multiple-Passengers-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC004 - Error Handling: Invalid Departure Airport" classname="SCRUM-6\flight-search.spec.ts" time="60.353">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-004: System handles invalid departure airport input">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-c3523-g-Invalid-Departure-Airport-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-c3523-g-Invalid-Departure-Airport-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:144:7 › SCRUM-6: Flight Search - Air Canada › TC004 - Error Handling: Invalid Departure Airport 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:151:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-c3523-g-Invalid-Departure-Airport-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-c3523-g-Invalid-Departure-Airport-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC005 - Date Validation: Past Date Prevention" classname="SCRUM-6\flight-search.spec.ts" time="60.376">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-005: System prevents selection of past departure dates">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-295ca-dation-Past-Date-Prevention-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-295ca-dation-Past-Date-Prevention-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:183:7 › SCRUM-6: Flight Search - Air Canada › TC005 - Date Validation: Past Date Prevention 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:190:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-295ca-dation-Past-Date-Prevention-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-295ca-dation-Past-Date-Prevention-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC006 - Input Validation: Same Departure and Destination" classname="SCRUM-6\flight-search.spec.ts" time="60.378">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-006: System prevents search with identical airports">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-f03da-e-Departure-and-Destination-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-f03da-e-Departure-and-Destination-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:221:7 › SCRUM-6: Flight Search - Air Canada › TC006 - Input Validation: Same Departure and Destination 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:228:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-f03da-e-Departure-and-Destination-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-f03da-e-Departure-and-Destination-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC007 - UI Element Visibility and Accessibility" classname="SCRUM-6\flight-search.spec.ts" time="11.389">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-007: All form elements are visible and accessible">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-0ac61-isibility-and-Accessibility-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-0ac61-isibility-and-Accessibility-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toBe(expected) // Object.is equality" type="expect.toBe">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:253:7 › SCRUM-6: Flight Search - Air Canada › TC007 - UI Element Visibility and Accessibility 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      262 |
+      263 |     const depAirportVisible = await searchPage.isDepartureAirportInputVisible();
+    > 264 |     expect(depAirportVisible).toBe(true);
+          |                               ^
+      265 |
+      266 |     const destAirportVisible = await searchPage.isDestinationAirportInputVisible();
+      267 |     expect(destAirportVisible).toBe(true);
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:264:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-0ac61-isibility-and-Accessibility-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-0ac61-isibility-and-Accessibility-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC008 - Date Logic: Return Date Must Be After Departure Date" classname="SCRUM-6\flight-search.spec.ts" time="60.216">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-008: System enforces return date after departure date">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-9c46e-ust-Be-After-Departure-Date-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-9c46e-ust-Be-After-Departure-Date-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:290:7 › SCRUM-6: Flight Search - Air Canada › TC008 - Date Logic: Return Date Must Be After Departure Date 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: Round-trip
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:297:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-9c46e-ust-Be-After-Departure-Date-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-9c46e-ust-Be-After-Departure-Date-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC009 - Result Accuracy: Flight Information Consistency" classname="SCRUM-6\flight-search.spec.ts" time="60.259">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-009: Flight results display accurate and consistent information">
+</property>
+</properties>
+<system-out>
+<![CDATA[Could not select trip type using standard methods: Error: page.waitForTimeout: Target page, context or browser has been closed
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-06b49-ght-Information-Consistency-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|SCRUM-6-flight-search-SCRU-06b49-ght-Information-Consistency-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › SCRUM-6\flight-search.spec.ts:323:7 › SCRUM-6: Flight Search - Air Canada › TC009 - Result Accuracy: Flight Information Consistency 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: Failed to select trip type: One-way
+
+       at ..\pages\FlightSearchPage.ts:109
+
+      107 |     } catch (e) {
+      108 |       console.log(`Could not select trip type using standard methods: ${e}`);
+    > 109 |       throw new Error(`Failed to select trip type: ${tripType}`);
+          |             ^
+      110 |     }
+      111 |   }
+      112 |
+        at FlightSearchPage.selectTripType (C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\pages\FlightSearchPage.ts:109:13)
+        at C:\Users\2000192702\Downloads\Jira_Project_8June\Jira_Project\tests\SCRUM-6\flight-search.spec.ts:330:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\SCRUM-6-flight-search-SCRU-06b49-ght-Information-Consistency-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\SCRUM-6-flight-search-SCRU-06b49-ght-Information-Consistency-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="SCRUM-6: Flight Search - Air Canada › TC010 - Airport Autocomplete Functionality" classname="SCRUM-6\flight-search.spec.ts" time="5.914">
+<properties>
+<property name="Test Case" value="TC-SCRUM-6-010: Airport selection autocomplete works correctly">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="seed.spec.ts" timestamp="2026-06-09T08:37:53.470Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.27" errors="0">
+<testcase name="Test group › seed" classname="seed.spec.ts" time="0.27">
+</testcase>
+</testsuite>
+</testsuites>

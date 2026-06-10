@@ -1,0 +1,32 @@
+[2026-06-08 18:08:42] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 18:08:42] [INFO] 📚 JIRA SPECS UPLOAD - FEATURE FILES & TEST DOCUMENTATION
+[2026-06-08 18:08:42] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 18:08:42] [INFO] 📋 Story Information:
+[2026-06-08 18:08:42] [INFO]    Story Name: JiraStory1
+[2026-06-08 18:08:42] [INFO]    Story Key: SCRUM-6
+[2026-06-08 18:08:42] [INFO]    Epic: SCRUM-7
+[2026-06-08 18:08:42] [INFO]    Scrum: Sprint 1
+[2026-06-08 18:08:42] [INFO]    Jira URL: https://hexaware-team-fshzf12b.atlassian.net//browse/SCRUM-6
+[2026-06-08 18:08:42] [INFO] 🔍 Files to upload:
+[2026-06-08 18:08:42] [INFO]    1. AIR-6.feature (Feature File) from features/ - ✓
+[2026-06-08 18:08:42] [INFO]    2. AIR-6-TEST-PLAN.md (Test Plan) from specs/ - ✓
+[2026-06-08 18:08:42] [INFO]    3. AIR-6-TEST-CASES.md (Test Cases) from specs/ - ✓
+[2026-06-08 18:08:42] [INFO] 📥 Fetching existing attachments from Jira...
+[2026-06-08 18:08:42] [INFO] 📋 Found 3 existing attachment(s)
+[2026-06-08 18:08:42] [INFO] 🗑️  Checking for existing files to replace...
+[2026-06-08 18:08:42] [INFO]    ⟳ Removing old version of AIR-6.feature (ID: 10003)
+[2026-06-08 18:08:43] [INFO]    ✅ Deleted: AIR-6.feature
+[2026-06-08 18:08:43] [INFO]    ⟳ Removing old version of AIR-6-TEST-PLAN.md (ID: 10004)
+[2026-06-08 18:08:44] [INFO]    ✅ Deleted: AIR-6-TEST-PLAN.md
+[2026-06-08 18:08:44] [INFO]    ⟳ Removing old version of AIR-6-TEST-CASES.md (ID: 10005)
+[2026-06-08 18:08:44] [INFO]    ✅ Deleted: AIR-6-TEST-CASES.md
+[2026-06-08 18:08:44] [INFO] 📤 Uploading files to Jira...
+[2026-06-08 18:08:44] [INFO] 📤 Uploading: AIR-6.feature
+[2026-06-08 18:08:44] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:08:45] [INFO] ✅ Successfully uploaded: AIR-6.feature
+[2026-06-08 18:08:45] [INFO] 📤 Uploading: AIR-6-TEST-PLAN.md
+[2026-06-08 18:08:45] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:08:46] [INFO] ✅ Successfully uploaded: AIR-6-TEST-PLAN.md
+[2026-06-08 18:08:46] [INFO] 📤 Uploading: AIR-6-TEST-CASES.md
+[2026-06-08 18:08:46] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:08:47] [INFO] ✅ Successfully uploaded: AIR-6-TEST-CASES.md

@@ -1,0 +1,15 @@
+[2026-06-08 14:52:07] [INFO] 📋 Story Information (configured):
+[2026-06-08 14:52:07] [INFO]    Story Name: JiraStory1
+[2026-06-08 14:52:07] [INFO]    Scrum Number: Sprint 0
+[2026-06-08 14:52:07] [INFO]    Epic: AIR-5
+[2026-06-08 14:52:07] [INFO]    Story Number: AIR-6
+[2026-06-08 14:52:07] [INFO] 🔗 Fetching from: https://rajeshsavir02.atlassian.net/rest/api/2/issue/AIR-6
+[2026-06-08 14:52:07] [INFO] 🔐 Auth: Basic cmFqZXNoc2F2aXIwMkBn...
+[2026-06-08 14:52:08] [INFO] 📊 Response Status: 404
+[2026-06-08 14:52:08] [WARN] ⚠️  Status: 404
+[2026-06-08 14:52:08] [ERROR] Error: Issue does not exist or you do not have permission to see it.
+[2026-06-08 14:52:08] [WARN] Configured story 'AIR-6' failed: Error: Jira API error (404): Issue does not exist or you do not have permission to see it.. Attempting fallback stories...
+[2026-06-08 14:52:08] [INFO] Trying alternative story: AIR-7
+[2026-06-08 14:52:08] [INFO] 🔗 Fetching from: https://rajeshsavir02.atlassian.net/rest/api/2/issue/AIR-7
+[2026-06-08 14:52:08] [INFO] 🔐 Auth: Basic cmFqZXNoc2F2aXIwMkBn...
+[2026-06-08 14:52:08] [INFO] 📊 Response Status: 404

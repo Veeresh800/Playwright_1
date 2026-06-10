@@ -1,0 +1,26 @@
+[2026-06-08 18:15:06] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 18:15:06] [INFO] 📚 JIRA SPECS UPLOAD - FEATURE FILES & TEST DOCUMENTATION
+[2026-06-08 18:15:06] [INFO] ═══════════════════════════════════════════════════════════════
+[2026-06-08 18:15:06] [INFO] 📋 Story Information:
+[2026-06-08 18:15:06] [INFO]    Story Name: JiraStory1
+[2026-06-08 18:15:06] [INFO]    Story Key: SCRUM-6
+[2026-06-08 18:15:06] [INFO]    Epic: SCRUM-7
+[2026-06-08 18:15:06] [INFO]    Scrum: Sprint 1
+[2026-06-08 18:15:06] [INFO]    Jira URL: https://hexaware-team-fshzf12b.atlassian.net//browse/SCRUM-6
+[2026-06-08 18:15:06] [INFO] 🔍 Files to upload:
+[2026-06-08 18:15:06] [INFO]    1. SCRUM-6.feature (Feature File) from features/ - ✓
+[2026-06-08 18:15:06] [INFO]    2. SCRUM-6-TEST-PLAN.md (Test Plan) from specs/ - ✓
+[2026-06-08 18:15:06] [INFO]    3. SCRUM-6-TEST-CASES.md (Test Cases) from specs/ - ✓
+[2026-06-08 18:15:06] [INFO] 📥 Fetching existing attachments from Jira...
+[2026-06-08 18:15:07] [INFO] 📋 Found 3 existing attachment(s)
+[2026-06-08 18:15:07] [INFO] 🗑️  Checking for existing files to replace...
+[2026-06-08 18:15:07] [INFO] 📤 Uploading files to Jira...
+[2026-06-08 18:15:07] [INFO] 📤 Uploading: SCRUM-6.feature
+[2026-06-08 18:15:07] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:15:08] [INFO] ✅ Successfully uploaded: SCRUM-6.feature
+[2026-06-08 18:15:08] [INFO] 📤 Uploading: SCRUM-6-TEST-PLAN.md
+[2026-06-08 18:15:08] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:15:09] [INFO] ✅ Successfully uploaded: SCRUM-6-TEST-PLAN.md
+[2026-06-08 18:15:09] [INFO] 📤 Uploading: SCRUM-6-TEST-CASES.md
+[2026-06-08 18:15:09] [INFO]    to Story: SCRUM-6
+[2026-06-08 18:15:10] [INFO] ✅ Successfully uploaded: SCRUM-6-TEST-CASES.md

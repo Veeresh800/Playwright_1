@@ -1,0 +1,48 @@
+================================================================================
+STORY EXECUTION REPORT
+================================================================================
+
+Execution ID:     exec-1780922275447
+Timestamp:        2026-06-08T12:37:55.447Z
+Status:           SUCCESS
+Duration:         1174ms
+
+ENVIRONMENT
+================================================================================
+Platform:         win32
+Node Version:     v24.15.0
+Environment:      development
+
+STORY DETAILS
+================================================================================
+Story Name:       JiraStory1
+Story Number:     SCRUM-6
+Epic:             SCRUM-7
+Scrum:            Sprint 1
+JIRA URL:         https://hexaware-team-fshzf12b.atlassian.net//browse/SCRUM-6
+
+Description:
+--------------------------------------------------------------------------------
+  Acceptance Criteria:
+
+Application url: [https://www.aircanada.com/home/ca/en/aco/flights|https://www.aircanada.com/home/ca/en/aco/flights|smart-link] 
+As a user
+
+# able to select *trip type*
+
+
+2.able to enter and select valid *departure airport*
+3.able to enter and select valid *destination airport*
+4.able to select a *future departure date*
+5.able to click the *Search button*
+6.able to view flight result with:
+
+* Departure time
+* Arrival time
+* Duration
+* Price
+--------------------------------------------------------------------------------
+
+================================================================================
+Generated at: 6/8/2026, 6:07:55 PM
+================================================================================

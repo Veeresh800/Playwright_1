@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-05-18T07:27:18.443Z",
+  "totalCases": 10,
+  "successful": 10,
+  "failed": 0,
+  "results": {
+    "TC-AIR-6-001": "AIR-15",
+    "TC-AIR-6-002": "AIR-16",
+    "TC-AIR-6-003": "AIR-17",
+    "TC-AIR-6-004": "AIR-18",
+    "TC-AIR-6-005": "AIR-19",
+    "TC-AIR-6-006": "AIR-20",
+    "TC-AIR-6-007": "AIR-21",
+    "TC-AIR-6-008": "AIR-22",
+    "TC-AIR-6-009": "AIR-23",
+    "TC-AIR-6-010": "AIR-24"
+  }
+}

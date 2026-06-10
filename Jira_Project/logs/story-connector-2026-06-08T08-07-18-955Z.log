@@ -1,0 +1,8 @@
+[2026-06-08 13:37:18] [INFO] 📋 Story Information:
+[2026-06-08 13:37:18] [INFO]    Story Name: JiraStory1
+[2026-06-08 13:37:18] [INFO]    Scrum Number: Sprint 0
+[2026-06-08 13:37:18] [INFO]    Epic: AIR-5
+[2026-06-08 13:37:18] [INFO]    Story Number: AIR-6
+[2026-06-08 13:37:18] [INFO] 🔗 Fetching from: https://rajeshsavir02.atlassian.net/rest/api/2/issue/AIR-6
+[2026-06-08 13:37:18] [INFO] 🔐 Auth: Basic cmFqZXNoc2F2aXIwMkBn...
+[2026-06-08 13:37:19] [INFO] 📊 Response Status: 404

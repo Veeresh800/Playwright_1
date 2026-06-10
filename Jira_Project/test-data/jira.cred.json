@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "jira": {
+      "type": "http",
+      "baseUrl": "https://hexaware-team-fshzf12b.atlassian.net/",
+      "email": "ramkumara1@hexaware.com",
+      "apiToken": "ATATT3xFfGF0xa5PApmO0xwssPpIZzKwW2B9--4hjYRfXFEWVHP4icKstgPyoYGPplAkDuCnYBga7ObTGX1FepxKu5DtWfn_l1WATtQLgRxk4_8eHiV-SHsn6Ng6zmRdVjzbDxn0bv6zjCfh3r9n0jHUq4rrErQT9zZPUeC1QDjLDwsR1BcQecw=AD26DE88",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}
+ 

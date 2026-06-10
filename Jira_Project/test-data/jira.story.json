@@ -1,0 +1,13 @@
+{
+  "JiraStory1": {
+    "scrumNumber": "Sprint 1",
+    "epic": "SCRUM-7",
+    "story": "SCRUM-6"
+  },
+  "JiraStory2": {
+    "scrumNumber": "Sprint 2",
+    "epic": "SCRUM-7",
+    "story": "SCRUM-8"
+  }
+}
+ 

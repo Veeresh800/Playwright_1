@@ -1,0 +1,7 @@
+[2026-06-08 16:47:52] [INFO] Starting story execution process...
+[2026-06-08 16:47:53] [INFO] Story details retrieved successfully
+[2026-06-08 16:47:53] [INFO] Feature file prompt generated
+[2026-06-08 16:47:53] [INFO] Automation context saved: C:\Test\Jira_Project\reports\story-output\automation-context.json
+[2026-06-08 16:47:53] [INFO] ✓ Report saved successfully: C:\Test\Jira_Project\reports\story-output\execution-2026-06-08T11-17-53-188Z-report.txt
+[2026-06-08 16:47:53] [INFO] ✓ Report saved (stable): C:\Test\Jira_Project\reports\story-output\report.txt
+[2026-06-08 16:47:53] [INFO] Execution completed successfully

@@ -1,0 +1,9 @@
+[2026-06-08 18:07:54] [INFO] 📋 Story Information (configured):
+[2026-06-08 18:07:54] [INFO]    Story Name: JiraStory1
+[2026-06-08 18:07:54] [INFO]    Scrum Number: Sprint 1
+[2026-06-08 18:07:54] [INFO]    Epic: SCRUM-7
+[2026-06-08 18:07:54] [INFO]    Story Number: SCRUM-6
+[2026-06-08 18:07:54] [INFO] 🔗 Fetching from: https://hexaware-team-fshzf12b.atlassian.net//rest/api/2/issue/SCRUM-6
+[2026-06-08 18:07:54] [INFO] 🔐 Auth: Basic cmFta3VtYXJhMUBoZXhh...
+[2026-06-08 18:07:55] [INFO] 📊 Response Status: 200
+[2026-06-08 18:07:55] [INFO] ✅ Description fetched successfully
